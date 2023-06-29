@@ -22,8 +22,8 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	kubeschedulerscheme "k8s.io/kubernetes/pkg/scheduler/apis/config/scheme"
 
-	"github.com/jingchu000/scheduler-framework-sample/pkg/apis/config"
-	configv1beta1 "github.com/jingchu000/scheduler-framework-sample/pkg/apis/config/v1beta1"
+	"github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis/config"
+	configv1beta1 "github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis/config/v1beta1"
 )
 
 var (

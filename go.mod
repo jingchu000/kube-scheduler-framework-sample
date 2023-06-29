@@ -1,4 +1,4 @@
-module github.com/jingchu000/scheduler-framework-sample
+module github.com/jingchu000/kube-scheduler-framework-sample
 
 go 1.20
 

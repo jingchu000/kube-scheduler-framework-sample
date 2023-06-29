@@ -22,7 +22,7 @@ limitations under the License.
 package v1beta1
 
 import (
-	config "github.com/jingchu000/scheduler-framework-sample/pkg/apis/config"
+	config "github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis/config"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"

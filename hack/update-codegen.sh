@@ -24,9 +24,9 @@ CODEGEN_PKG=${CODEGEN_PKG:-$(cd "${SCRIPT_ROOT}"; ls -d -1 ./vendor/k8s.io/code-
 # gen config:v1beta1
 bash "${CODEGEN_PKG}"/generate-internal-groups.sh \
   "deepcopy,conversion,defaulter" \
-  github.com/jingchu000/scheduler-framework-sample/pkg/generated \
-  github.com/jingchu000/scheduler-framework-sample/pkg/apis \
-  github.com/jingchu000/scheduler-framework-sample/pkg/apis \
+  github.com/jingchu000/kube-scheduler-framework-sample/pkg/generated \
+  github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis \
+  github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis \
   "config:v1beta1" \
   --go-header-file "${SCRIPT_ROOT}"/hack/boilerplate/boilerplate.generatego.txt
 

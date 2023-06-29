@@ -15,9 +15,9 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package
-// +k8s:conversion-gen=github.com/jingchu000/scheduler-framework-sample/pkg/apis/config
+// +k8s:conversion-gen=github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis/config
 // +k8s:defaulter-gen=TypeMeta
 // +groupName=kubescheduler.config.k8s.io
 
 // Package v1beta1 is the v1beta1 version of the API.
-package v1beta1 // import "github.com/jingchu000/scheduler-framework-sample/pkg/apis/config/v1beta1"
+package v1beta1 // import "github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis/config/v1beta1"

@@ -1,7 +1,7 @@
 apiVersion: kubescheduler.config.k8s.io/v1beta3
 kind: KubeSchedulerConfiguration
 clientConnection:
-  kubeconfig: "[You KubeConfig Path]"
+  kubeconfig: "[You Kubeconfig Path]"
 leaderElection:
   leaderElect: false
 profiles:

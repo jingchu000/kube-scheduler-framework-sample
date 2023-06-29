@@ -3,6 +3,7 @@ package networktraffic
 import (
 	"context"
 	"fmt"
+	"time"
 
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -11,7 +12,7 @@ import (
 
 	frameworkruntime "k8s.io/kubernetes/pkg/scheduler/framework/runtime"
 
-	"github.com/jingchu000/scheduler-framework-sample/pkg/apis/config"
+	"github.com/jingchu000/kube-scheduler-framework-sample/pkg/apis/config"
 )
 
 const Name = "NetworkTraffic"
@@ -43,9 +44,9 @@ func New(obj runtime.Object, h framework.Handle) (framework.Plugin, error) {
 
 	klog.Infof("[Net] args received.NetworkInterface:%s;  TimeRangeInMinutes: %d,Address:%s", args.NetworkInterface, args.TimeRangeInMinutes, args.Address)
 	return &NetworkTraffic{
-		handle: h,
-		//prometheus: NewPrometheus(args.Address, args.NetworkInterface, time.Minute*time.Duration(args.TimeRangeInMinutes)),
-		prometheus: nil,
+		handle:     h,
+		prometheus: NewPrometheus(args.Address, args.NetworkInterface, time.Minute*time.Duration(args.TimeRangeInMinutes)),
+		//prometheus: nil,
 	}, nil
 }
 

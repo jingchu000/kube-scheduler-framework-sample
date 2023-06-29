@@ -9,9 +9,17 @@ import (
 	"k8s.io/component-base/logs"
 	"k8s.io/kubernetes/cmd/kube-scheduler/app"
 
-	"github.com/jingchu000/scheduler-framework-sample/pkg/plugins/networktraffic"
+	"github.com/jingchu000/kube-scheduler-framework-sample/pkg/plugins/networktraffic"
+	"github.com/jingchu000/kube-scheduler-framework-sample/pkg/plugins/sample"
 )
 
+/*
+Reference:
+https://github.com/kubernetes-sigs/scheduler-plugins
+https://mp.weixin.qq.com/s/pRnXeRGw-5YpEDAjk5HF6g
+https://mp.weixin.qq.com/s/OwSK-taa6zIwKsfyeudPwg
+Welcome to communicate With My Chat: Base64 Code{bGItQWJpbmc=}
+*/
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 	logs.InitLogs()

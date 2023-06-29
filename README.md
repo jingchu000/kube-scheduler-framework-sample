@@ -22,6 +22,12 @@ $ make image
 $ make gen
 ```
 
+### configuration
+```shell
+/deploy/scheduler-config.yaml write in  kubeconfig: "[You Kubeconfig Path]"
+```
+
+
 ## Deploy
 
 ```shell

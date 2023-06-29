@@ -24,7 +24,7 @@ $ make gen
 
 ### configuration
 ```shell
-/deploy/scheduler-config.yaml write in  kubeconfig: "[You Kubeconfig Path]"
+/deploy/scheduler-config.yaml write in  kubeconfig: "[You Kubeconfig Path]" 
 ```
 
 

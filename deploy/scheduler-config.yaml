@@ -1,0 +1,20 @@
+apiVersion: kubescheduler.config.k8s.io/v1beta3
+kind: KubeSchedulerConfiguration
+clientConnection:
+  kubeconfig: "[You KubeConfig Path]"
+leaderElection:
+  leaderElect: false
+profiles:
+  - schedulerName: scheduler-framework-sample
+    plugins:
+      score:
+        enabled:
+          - name: NetworkTraffic
+        disabled:
+          - name: "*"
+    pluginConfig:
+      - name: NetworkTraffic
+        args:
+          prometheusAddress: "http://prometheus-1616380099-server.monitor"
+          networkInterface: "ens192"
+          timeRangeInMinutes: 3
